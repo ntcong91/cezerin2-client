@@ -7,6 +7,7 @@ import ProductOptions from './api/products/options';
 import ProductOptionValues from './api/products/optionValues';
 import ProductVariants from './api/products/variants';
 import ProductImages from './api/products/images';
+import Provinces from './api/addresses/provinces';
 import Sitemap from './api/sitemap';
 import Theme from './api/theme/theme';
 import ThemeSettings from './api/theme/settings';
@@ -67,6 +68,7 @@ export default class Client {
 		this.products.options.values = new ProductOptionValues(apiClient);
 		this.products.variants = new ProductVariants(apiClient);
 		this.products.images = new ProductImages(apiClient);
+		this.provinces = new Provinces(apiClient);
 		this.productCategories = new ProductCategories(apiClient);
 		this.customers = new Customers(apiClient);
 		this.orders = new Orders(apiClient);
@@ -98,6 +100,7 @@ export default class Client {
 
 		this.ajax = {};
 		this.ajax.products = new Products(ajaxClient);
+		this.ajax.provinces = new Provinces(ajaxClient);
 		this.ajax.sitemap = new Sitemap(ajaxClient);
 		this.ajax.cart = new AjaxCart(ajaxClient);
 		this.ajax.login = new AjaxLogin(ajaxClient);
