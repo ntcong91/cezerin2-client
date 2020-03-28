@@ -6,7 +6,7 @@ export default class WebStoreClient extends RestClient {
 		super({ baseUrl: 'https://api.cezerin.com/v1', token: options.token });
 	}
 
-	static authorize = (email, adminUrl) => {
+	static authorize(email, adminUrl){
 		const config = {
 			method: 'post',
 			headers: {
