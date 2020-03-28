@@ -32,7 +32,7 @@
       "url": "https://github.com/sonufrienko"
     }
   ],
-  "main": "lib/index.js",
+  "main": "index/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ntcong91/cezerin2-client"
