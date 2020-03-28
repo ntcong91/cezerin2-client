@@ -2,7 +2,7 @@
 export default class Provinces {
 	constructor(client) {
 		this.client = client;
-		this.resourceUrl = '/provices';
+		this.resourceUrl = '/provinces';
 	}
 
 	list(filter) {
