@@ -3,7 +3,7 @@ export default class AjaxWards {
 		this.client = client;
 	}
 
-	list() {
-		return this.client.get('/wards');
-	}
+	list(filter) {
+		return this.client.get('/wards', filter);
+    }
 }

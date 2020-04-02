@@ -3,7 +3,8 @@ export default class AjaxDistricts {
 		this.client = client;
 	}
 
-	list() {
-		return this.client.get('/districts');
+	list(filter) {
+		return this.client.get('/districts', filter);
 	}
+
 }
