@@ -15,7 +15,6 @@ import AjaxProvinces from './api/ajaxProvinces';
 import AjaxWards from './api/ajaxWards';
 import AjaxDistricts from './api/ajaxDistricts';
 
-import Wards from './api/addresses/wards';
 import Sitemap from './api/sitemap';
 import Theme from './api/theme/theme';
 import ThemeSettings from './api/theme/settings';
