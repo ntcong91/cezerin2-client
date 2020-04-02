@@ -7,6 +7,10 @@ import ProductOptions from './api/products/options';
 import ProductOptionValues from './api/products/optionValues';
 import ProductVariants from './api/products/variants';
 import ProductImages from './api/products/images';
+
+import Provinces from './api/addresses/provinces';
+import Districts from './api/addresses/districts';
+import Wards from './api/addresses/wards';
 import AjaxProvinces from './api/ajaxProvinces';
 import AjaxWards from './api/ajaxWards';
 import AjaxDistricts from './api/ajaxDistricts';
