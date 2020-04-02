@@ -7,8 +7,10 @@ import ProductOptions from './api/products/options';
 import ProductOptionValues from './api/products/optionValues';
 import ProductVariants from './api/products/variants';
 import ProductImages from './api/products/images';
-import Provinces from './api/addresses/provinces';
-import Districts from './api/addresses/districts';
+import AjaxProvinces from './api/ajaxProvinces';
+import AjaxWards from './api/ajaxWards';
+import AjaxDistricts from './api/ajaxDistricts';
+
 import Wards from './api/addresses/wards';
 import Sitemap from './api/sitemap';
 import Theme from './api/theme/theme';
@@ -104,8 +106,9 @@ export default class Client {
 
 		this.ajax = {};
 		this.ajax.products = new Products(ajaxClient);
-		this.ajax.provinces = new Provinces(ajaxClient);
-		this.ajax.districts = new  Districts(ajaxClient);
+		this.ajax.provinces = new AjaxProvinces(ajaxClient);
+		this.ajax.districts = new AjaxDistricts(ajaxClient);
+		this.ajax.wards = new AjaxWards(ajaxClient);
 		this.ajax.wards = new Wards(ajaxClient);
 		this.ajax.sitemap = new Sitemap(ajaxClient);
 		this.ajax.cart = new AjaxCart(ajaxClient);
