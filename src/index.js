@@ -111,8 +111,7 @@ export default class Client {
 		this.ajax.products = new Products(ajaxClient);
 		this.ajax.provinces = new AjaxProvinces(ajaxClient);
 		this.ajax.districts = new AjaxDistricts(ajaxClient);
-		this.ajax.wards = new AjaxWards(ajaxClient);
-		this.ajax.wards = new Wards(ajaxClient);
+		this.ajax.wards 	= new AjaxWards(ajaxClient);
 		this.ajax.sitemap = new Sitemap(ajaxClient);
 		this.ajax.cart = new AjaxCart(ajaxClient);
 		this.ajax.login = new AjaxLogin(ajaxClient);
